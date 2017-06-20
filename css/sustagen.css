@@ -74,13 +74,15 @@ img {
 
 input, 
 .form-control {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-submit, 
 .form-reset {
   border: 1px solid #E63A38;
-  border-radius: 3px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   background: #E63A38;
   color: #fff;
   font-size: 11px;
@@ -119,8 +121,7 @@ input,
 /* Header */
 
 header {
-  background: #014382;
-  height: 124px;
+  height: 116px;
   overflow: hidden;
 }
 
@@ -138,7 +139,6 @@ header .navbar-brand {
 
 .navbar {
   background: #F3F3F3;
-  height: 124px;
 }
 
 /*.navbar-header .navbar-brand {
