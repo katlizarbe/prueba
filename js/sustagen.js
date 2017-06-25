@@ -2,8 +2,8 @@
   
   $("#owl-benefits-carousel").owlCarousel({
     items : 1,
-    loop: true,
     autoPlay: true,
+    loop: true,
     lazyLoad : true,
     slideSpeed: 1000,
     navigation : true
