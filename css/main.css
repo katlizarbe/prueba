@@ -834,12 +834,12 @@ header .nav.navbar-nav li a {
 
 .block-items li:first-of-type > .item-data-top > img {
   width: 50%;
-  margin-right: 5rem;
+  /*margin-right: 5rem;*/
 }
 
 .block-items li:nth-of-type(2) > .item-data-top > img {
-  width: 60%;
-  margin-right: 5rem;
+  width: 50%;
+  /*margin-right: 5rem;*/
 }
 
 #benefits .block-items .item-data-bottom > p,
@@ -906,28 +906,34 @@ header .nav.navbar-nav li a {
   color: #a0017f;
   position: relative;
   top: -3rem;
+  width: 111px;
+  height: 85px;
+  display: inline-block;
+  background-image: url(../img/sprite.png);
+  background-position-y :-3.5rem;
+  -webkit-background-size: 190% 142%;
+          background-size: 190% 142%;
+  padding: 3rem 1rem;
 }
 
 #benefits .block-items li:nth-of-type(2) .item-data-top span {
   color: #7b1792;
+  position: relative;
+  top: -3rem;
+  width: 111px;
+  height: 85px;
+  display: inline-block;
+  background-image: url(../img/sprite.png);
+  background-position-y :-3.5rem;
+  -webkit-background-size: 190% 142%;
+          background-size: 190% 142%;
+  padding: 3rem 1rem;
 }
 
 #benefits .block-items span.item-data-grams {
   position: relative;
 }
 
-#benefits .block-items span.item-data-grams:before {
-  content: "";
-  background: url(../img/sprite.png);
-  width: 154px;
-  height: 117px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position-y: -48px;
-  position: absolute;
-  top: -3rem;
-  left: -3rem;
-}
 
 @media (min-width: 360px) {
   .block-items {
@@ -937,12 +943,37 @@ header .nav.navbar-nav li a {
   .block-items li:first-of-type > .item-data-top > img {
     width: inherit;
   }
-  .block-items li:last-of-type > .item-data-top > img {
+/*  .block-items li:last-of-type > .item-data-top > img {
     width: inherit;
-  }
+  }*/
 }
 
 @media (min-width: 550px) {
+
+  #benefits .block-items li:nth-of-type(2) .item-data-top span ,
+  #benefits .block-items li:first-of-type .item-data-top span {
+    background: none; 
+    font-size: 3rem;
+    padding: 2rem 1rem; 
+  }
+
+  .block-items li:first-of-type > .item-data-top > img {
+    width: 50%;
+    margin-right: 5rem;
+  }
+  
+  #benefits .block-items span.item-data-grams:before {
+    content: "";
+    background: url(../img/sprite.png);
+    width: 154px;
+    height: 117px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position-y: -48px;
+    position: absolute;
+    top: -3rem;
+    left: -3rem;
+  }
   #benefits {
     padding-bottom: 10rem;
   }
@@ -1698,5 +1729,11 @@ footer h3 > a {
     margin: 0 auto;
     padding: 0;
     padding-bottom: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #owl-benefits-carousel .benefits__text {
+    padding: 0;
   }
 }
